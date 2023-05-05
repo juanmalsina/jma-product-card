@@ -3,7 +3,7 @@ import { ProductProps } from "../interfaces/interfaces";
 export const product1: ProductProps = {
     id: "1",
     title: "coffee mug - card",
-    img: "images/coffee-mug.png",
+    //img: "images/coffee-mug.png",
   };
   
   export const product2: ProductProps = {

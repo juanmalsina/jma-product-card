@@ -1,8 +1,8 @@
-import React from "react";
-import { useContext } from "react";
-import { ProductContext } from "./ProductCard";
-import noImage from "../assets/no-image.jpg";
-import styles from "../styles/styles.module.css";
+import React from 'react';
+import { useContext } from 'react';
+import { ProductContext } from './ProductCard';
+import noImage from '../assets/no-image.jpg';
+import styles from '../styles/styles.module.css';
 
 interface ProductImageProps {
   img?: string;
@@ -12,12 +12,12 @@ interface ProductImageProps {
 
 export const ProductImage = ({ img, className, style }: ProductImageProps) => {
   const { product } = useContext(ProductContext);
-  const imageToShow = img || product.img;
+  const imageToShow = product?.img || img || noImage;
   return (
     <img
       style={style}
       className={`${styles.productImg} ${className}`}
-      src={imageToShow ? imageToShow : noImage}
+      src={imageToShow}
       alt="coffe mug"
     />
   );
