@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0-rc",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -43,7 +43,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "jma-product-card",
+  "name": "jma-product-card-c",
   "author": "juanmalsina",
   "module": "dist/jma-product-card.esm.js",
   "size-limit": [
